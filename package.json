@@ -2,7 +2,7 @@
   "name": "wedding-invitation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://daegikim.github.io/wedding-invitation",
+  "homepage": "https://0505.wedding",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

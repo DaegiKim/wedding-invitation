@@ -4,20 +4,16 @@ import './index.css';
 import { HashRouter } from 'react-router-dom';
 import App from "./App";
 import {createTheme, ThemeProvider} from "@mui/material";
-
-const theme = createTheme({
-  typography: {
-    fontFamily: 'Nanum Myeongjo, serif',
-  },
-});
+import theme from './theme';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
-  <HashRouter>
-    <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
+    <HashRouter>
       <App />
-    </ThemeProvider>
-  </HashRouter>
+    </HashRouter>
+  </ThemeProvider>
 );
