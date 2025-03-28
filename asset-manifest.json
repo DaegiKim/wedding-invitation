@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/wedding-invitation/static/css/main.cb746b20.css",
-    "main.js": "/wedding-invitation/static/js/main.920dab18.js",
-    "static/media/intro.mov": "/wedding-invitation/static/media/intro.72a82060653e30bd6e88.mov",
-    "static/media/outro.mov": "/wedding-invitation/static/media/outro.10b65dcda3198350ba65.mov",
-    "static/media/gallery4.jpeg": "/wedding-invitation/static/media/gallery4.0006f8223cb6cd470605.jpeg",
-    "static/media/gallery3.jpeg": "/wedding-invitation/static/media/gallery3.e8b25f9372479b69d6e6.jpeg",
-    "static/media/gallery1.jpeg": "/wedding-invitation/static/media/gallery1.df797e28089966236c2f.jpeg",
-    "static/media/gallery2.jpeg": "/wedding-invitation/static/media/gallery2.4f33beec5cc775ea5720.jpeg",
-    "static/media/love-letter.png": "/wedding-invitation/static/media/love-letter.68d6ddd9fdce7cf3e62f.png",
-    "static/media/wedding-bells.png": "/wedding-invitation/static/media/wedding-bells.064930b1c65bc7851dd6.png",
-    "index.html": "/wedding-invitation/index.html",
-    "main.cb746b20.css.map": "/wedding-invitation/static/css/main.cb746b20.css.map",
-    "main.920dab18.js.map": "/wedding-invitation/static/js/main.920dab18.js.map"
+    "main.css": "/static/css/main.cb746b20.css",
+    "main.js": "/static/js/main.e8ad9135.js",
+    "static/media/intro.mov": "/static/media/intro.72a82060653e30bd6e88.mov",
+    "static/media/outro.mov": "/static/media/outro.10b65dcda3198350ba65.mov",
+    "static/media/gallery4.jpeg": "/static/media/gallery4.0006f8223cb6cd470605.jpeg",
+    "static/media/gallery3.jpeg": "/static/media/gallery3.e8b25f9372479b69d6e6.jpeg",
+    "static/media/gallery1.jpeg": "/static/media/gallery1.df797e28089966236c2f.jpeg",
+    "static/media/gallery2.jpeg": "/static/media/gallery2.4f33beec5cc775ea5720.jpeg",
+    "static/media/love-letter.png": "/static/media/love-letter.68d6ddd9fdce7cf3e62f.png",
+    "static/media/wedding-bells.png": "/static/media/wedding-bells.064930b1c65bc7851dd6.png",
+    "index.html": "/index.html",
+    "main.cb746b20.css.map": "/static/css/main.cb746b20.css.map",
+    "main.e8ad9135.js.map": "/static/js/main.e8ad9135.js.map"
   },
   "entrypoints": [
     "static/css/main.cb746b20.css",
-    "static/js/main.920dab18.js"
+    "static/js/main.e8ad9135.js"
   ]
 }
