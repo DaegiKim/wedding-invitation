@@ -150,7 +150,7 @@ function App() {
                 </Box>
                 <IconButton
                   size="small"
-                  onClick={() => copyToClipboard(`${account.name} | ${account.bank} ${account.number}`)}
+                  onClick={() => copyToClipboard(`${account.bank} ${account.number}`)}
                   sx={{ color: '#D4AF37' }}
                 >
                   <ContentCopyIcon sx={{ fontSize: '1.2rem' }} />
