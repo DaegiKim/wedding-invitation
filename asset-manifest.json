@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb746b20.css",
-    "main.js": "/static/js/main.b5d69c79.js",
+    "main.css": "/static/css/main.2660a6ef.css",
+    "main.js": "/static/js/main.bca8cf3c.js",
     "static/media/intro.mov": "/static/media/intro.72a82060653e30bd6e88.mov",
     "static/media/outro.mov": "/static/media/outro.10b65dcda3198350ba65.mov",
     "static/media/gallery4.jpeg": "/static/media/gallery4.0006f8223cb6cd470605.jpeg",
@@ -11,11 +11,11 @@
     "static/media/love-letter.png": "/static/media/love-letter.68d6ddd9fdce7cf3e62f.png",
     "static/media/wedding-bells.png": "/static/media/wedding-bells.064930b1c65bc7851dd6.png",
     "index.html": "/index.html",
-    "main.cb746b20.css.map": "/static/css/main.cb746b20.css.map",
-    "main.b5d69c79.js.map": "/static/js/main.b5d69c79.js.map"
+    "main.2660a6ef.css.map": "/static/css/main.2660a6ef.css.map",
+    "main.bca8cf3c.js.map": "/static/js/main.bca8cf3c.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb746b20.css",
-    "static/js/main.b5d69c79.js"
+    "static/css/main.2660a6ef.css",
+    "static/js/main.bca8cf3c.js"
   ]
 }
