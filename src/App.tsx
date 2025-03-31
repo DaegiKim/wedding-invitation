@@ -24,11 +24,11 @@ function logConsoleMessage() {
     
     이 청첩장은 손으로 쓰듯,
     한 줄 한 줄 마음을 담아 만든 코드입니다.
-    감성은 콘솔에도 머뭅니다 💻💍
+    감성은 콘솔에도 머뭅니다 💻
     
     김대기 ᐧ 이슬의 결혼식에
     개발자의 방식으로 오신 걸
-    환영합니다 🌿`,
+    환영합니다 💍`,
     'color: #5C6F5B; font-family: "Gowun Batang", serif; font-size: 13px; line-height: 1.8;'
   );
 
