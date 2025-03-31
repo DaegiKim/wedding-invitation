@@ -5,6 +5,9 @@
   "display": "standalone",
   "background_color": "#1F2B20",
   "theme_color": "#F2C94C",
+  "description": "2025년 5월 5일, 제주에서. 저희의 결혼 소식을 전합니다.",
+  "lang": "ko",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "rsvp.png",
