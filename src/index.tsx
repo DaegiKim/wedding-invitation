@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { HashRouter } from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import App from "./App";
-import {createTheme, ThemeProvider} from "@mui/material";
+import {ThemeProvider} from "@mui/material";
 import theme from './theme';
 
 const root = ReactDOM.createRoot(

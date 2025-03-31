@@ -1,25 +1,18 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
+  "name": "김대기 ᐧ 이슬의 청첩장",
+  "short_name": "청첩장",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#1F2B20",
+  "theme_color": "#F2C94C",
+  "description": "2025년 5월 5일, 제주에서. 저희의 결혼 소식을 전합니다.",
+  "lang": "ko",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "rsvp.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

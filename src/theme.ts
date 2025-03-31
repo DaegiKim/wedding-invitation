@@ -3,7 +3,7 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 let theme = createTheme({
   typography: {
-    fontFamily: 'Nanum Myeongjo, serif',
+    fontFamily: 'Gowun Batang, serif',
     fontSize: 14,
     h1: {
       fontSize: '2.5rem',
