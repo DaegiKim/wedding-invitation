@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.98947e13.css",
-    "main.js": "/static/js/main.ee140e00.js",
+    "main.js": "/static/js/main.573cf248.js",
     "static/media/intro.mov": "/static/media/intro.72a82060653e30bd6e88.mov",
     "static/media/outro.mov": "/static/media/outro.10b65dcda3198350ba65.mov",
     "static/media/gallery4.jpeg": "/static/media/gallery4.0006f8223cb6cd470605.jpeg",
@@ -14,6 +14,6 @@
   },
   "entrypoints": [
     "static/css/main.98947e13.css",
-    "static/js/main.ee140e00.js"
+    "static/js/main.573cf248.js"
   ]
 }
