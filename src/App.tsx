@@ -11,29 +11,25 @@ import gallery1 from './assets/images/gallery1.jpeg';
 import gallery2 from './assets/images/gallery2.jpeg';
 import gallery3 from './assets/images/gallery3.jpeg';
 import gallery4 from './assets/images/gallery4.jpeg';
+import {useLocation, useNavigate} from "react-router-dom";
 
 function logConsoleMessage() {
   console.log(
-    `%c✨ 개발자들이란, 이런 걸 보고 웃는다죠? ✨`,
-    'color: #F2C94C; background-color: #1B241B; font-size: 16px; font-weight: bold; padding: 4px 8px; border-radius: 4px;'
+    `%c✨ 이 사랑은 디버깅할 필요가 없습니다. ✨`,
+    'color: #F2C94C; font-size: 16px; font-weight: bold; padding: 4px 8px; border-radius: 4px;'
   );
 
   console.log(
     `%c\
-    https://0505.wedding
+    $ git commit -m "평생 함께하기"
+    $ git push origin love
     
-    이 청첩장은 손으로 쓰듯,
-    한 줄 한 줄 마음을 담아 만든 코드입니다.
-    감성은 콘솔에도 머뭅니다 💻
-    
-    김대기 ᐧ 이슬의 결혼식에
-    개발자의 방식으로 오신 걸
-    환영합니다 💍`,
+    Push 완료. Rollback은 없습니다. 💍`,
     'color: #5C6F5B; font-family: "Gowun Batang", serif; font-size: 13px; line-height: 1.8;'
   );
 
   console.log(
-    `%c🌿 From developer with love. – devin.kim`,
+    `%c🌿 코드와 마음으로 만든 초대장 – devin.kim`,
     'color: #7BA488; font-size: 12px; font-style: italic; margin-top: 8px;'
   );
 }
@@ -41,6 +37,20 @@ function logConsoleMessage() {
 function App() {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [copiedAccount, setCopiedAccount] = useState('');
+
+  const location = useLocation();
+  const navigate = useNavigate();
+  const hideAccountSection = location.pathname === '/kko';
+
+  useEffect(() => {
+    const kkoVisited = localStorage.getItem('kkoVisited');
+
+    if (location.pathname === '/kko') {
+      localStorage.setItem('kkoVisited', 'true');
+    } else if (location.pathname === '/' && kkoVisited === 'true') {
+      navigate('/kko', { replace: true });
+    }
+  }, [location.pathname, navigate]);
 
   useEffect(() => {
     logConsoleMessage();
@@ -206,36 +216,49 @@ function App() {
             마음 전하실 곳
           </Typography>
 
-          <Stack spacing={2}>
-            {[{ name: '김진용', bank: '농협', number: '423070-52-042084' }, { name: '이종우', bank: '국민', number: '233-21-0281-289' }, { name: '이슬', bank: '신한', number: '110-438-058681' }].map((account, idx) => (
-              <Paper
-                key={idx}
-                elevation={3}
-                sx={{
-                  bgcolor: '#1A211A',
-                  color: '#F2C94C',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  px: 3,
-                  py: 2,
-                  borderRadius: 2,
-                }}
-              >
-                <Box sx={{ textAlign: 'left' }}>
-                  <Typography variant="body1" sx={{ fontWeight: 500 }}>{account.name}</Typography>
-                  <Typography variant="body2">{account.bank} {account.number}</Typography>
-                </Box>
-                <IconButton
-                  size="small"
-                  onClick={() => copyToClipboard(`${account.bank} ${account.number}`)}
-                  sx={{ color: '#F2C94C' }}
+          {hideAccountSection ? (
+            // 계좌를 숨기고 메시지만 노출
+            <Typography variant="body2" sx={{ color: '#BDBDBD', fontSize: '1rem', lineHeight: 1.8 }}>
+              따뜻한 마음만으로도 충분히 감사한 하루입니다.<br />
+              축의금은 정중히 사양드리고자 합니다.<br />
+              앞으로 걸어갈 길에도 많은 응원 부탁드립니다.
+            </Typography>
+          ) : (
+            // 원래 계좌 리스트
+            <Stack spacing={2}>
+              {[{ name: '김진용', bank: '농협', number: '423070-52-042084' },
+                { name: '이종우', bank: '국민', number: '233-21-0281-289' },
+                { name: '이슬', bank: '신한', number: '110-438-058681' }
+              ].map((account, idx) => (
+                <Paper
+                  key={idx}
+                  elevation={3}
+                  sx={{
+                    bgcolor: '#1A211A',
+                    color: '#F2C94C',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    px: 3,
+                    py: 2,
+                    borderRadius: 2,
+                  }}
                 >
-                  <ContentCopyIcon sx={{ fontSize: '1.2rem' }} />
-                </IconButton>
-              </Paper>
-            ))}
-          </Stack>
+                  <Box sx={{ textAlign: 'left' }}>
+                    <Typography variant="body1" sx={{ fontWeight: 500 }}>{account.name}</Typography>
+                    <Typography variant="body2">{account.bank} {account.number}</Typography>
+                  </Box>
+                  <IconButton
+                    size="small"
+                    onClick={() => copyToClipboard(`${account.bank} ${account.number}`)}
+                    sx={{ color: '#F2C94C' }}
+                  >
+                    <ContentCopyIcon sx={{ fontSize: '1.2rem' }} />
+                  </IconButton>
+                </Paper>
+              ))}
+            </Stack>
+          )}
         </Container>
       </Box>
 
