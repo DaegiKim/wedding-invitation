@@ -40,15 +40,15 @@ function App() {
 
   const location = useLocation();
   const navigate = useNavigate();
-  const hideAccountSection = location.pathname === '/kko';
+  const hideAccountSection = location.pathname === '/invite';
 
   useEffect(() => {
     const kkoVisited = localStorage.getItem('kkoVisited');
 
-    if (location.pathname === '/kko') {
+    if (location.pathname === '/invite') {
       localStorage.setItem('kkoVisited', 'true');
     } else if (location.pathname === '/' && kkoVisited === 'true') {
-      navigate('/kko', { replace: true });
+      navigate('/invite', { replace: true });
     }
   }, [location.pathname, navigate]);
 
